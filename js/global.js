@@ -84,4 +84,17 @@ fontes.addEventListener('click', function(){
             display.style.color = '#53c14c';
 }})
 
-
+document.addEventListener("DOMContentLoaded", function() {
+    const textarea = document.getElementById("display");
+    const button = document.getElementById("falar");
+  
+    // Mantém o teclado sempre ativado no campo de texto
+    textarea.addEventListener("focus", function() {
+      textarea.removeAttribute("readonly");
+    });
+  
+    // Desativa a edição do campo de texto quando o botão for clicado
+    button.addEventListener("click", function() {
+      textarea.setAttribute("readonly", "readonly");
+    });
+  });
