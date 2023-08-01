@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Sintetizador de Voz</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <div class="display">
+        <textarea id="display"></textarea>
+    </div>
+
+    <div class="fontes" id="fontes">
+        <span id="sp1">Aa</span>
+    </div>
+
+    <div class="teclado">
+        <div id="teclas">
+        </div>
+
+        <div class="comandos">
+            <button id="falar" onclick="sintetizarVoz()">FALAR</button>
+        </div>
+    </div>
+
+    <script src="js/classes.js"></script>
+    <script src="js/funcoes.js"></script>
+    <script src="js/global.js"></script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+/* Arquivo fonts.css */
+@font-face {
+    font-family: 'borel';
+    src: url('../fonts/Borel-Regular.ttf') format('truetype');
+  }
+
+  /* Arquivo fonts.css */
+@font-face {
+    font-family: 'comic';
+    src: url('../fonts/ComicNeue-Regular.ttf') format('truetype');
+  }
+
+body {
+    height: 100vh;
+    font-family:'comic';
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background: #e2f1e2;
+}
+
+#titulo {
+    text-align: center;
+    border-bottom: 1px solid #8BC34A;
+    padding-bottom: 25px;
+    font-size: 3vh;
+}
+
+.fontes{
+    padding: 0 3vh;
+    font-size: 4vh;
+    font-weight: bold;
+    color: coral;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: flex-end;
+    text-shadow: 0px 1px 3px #555;
+}
+
+
+.display{
+    display: flex;
+    width: 90%;
+    height: 30vh;
+    min-height: 30vh;
+    max-height: 30vh;
+    border: 2px solid #eee;
+    margin: 20px auto;
+    background: #fff;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vh;
+    color: coral;
+}
+
+#display{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: comic;
+    font-size: 3.5vh;
+    color: coral;
+    background: #2f2e27;
+}
+
+.teclado {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: auto;
+}
+
+
+#teclas {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+    border: 0px solid #ccc;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0;
+}
+
+
+.tecla {
+    width: 22%;
+    height: 5vh;
+    margin: 5px;
+    
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px #555;
+    background: #fff;
+    cursor: pointer;
+}
+
+.tecla p {
+    font-size: 2.7vh;
+    margin: auto;
+    color: #333;
+}
+
+.comandos {
+    display: flex;
+    width: 95%;
+    margin: 15px auto;
+}
+
+#falar {
+    width: 100%;
+    height: 7vh;
+    font-size: 3vh;
+    color: #fafafa;
+    background: #53c14c;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0px 2px 6px #343d2a;
+}
+
+#falar:active {
+    color: #eeeded;
+    background: #4cb145;
+    box-shadow: 0px 0px 2px #343d2a;
+}
